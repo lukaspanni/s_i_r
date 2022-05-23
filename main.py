@@ -40,4 +40,5 @@ if __name__ == "__main__":
     plt.plot(x_t, s)
     plt.plot(x_t, i)
     plt.plot(x_t, r)
-    plt.show()
+    plt.savefig("plot.pdf")
+    # plt.show()
