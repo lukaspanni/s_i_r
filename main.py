@@ -4,9 +4,9 @@ b = 0.1
 k = 0.05
 n = 100
 
-s = [0.99]
-i = [0.01]
-r = [0]
+s = [0.99*n]
+i = [0.01*n]
+r = [0*n]
 
 beta = b/n
 
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     print("s", s[-1])
     print("i", i[-1])
     print("r", r[-1])
-    x_t = [i for i in range(t-1)]
+    x_t = [i for i in range(t)]
     plt.plot(x_t, s)
     plt.plot(x_t, i)
     plt.plot(x_t, r)
